@@ -73,3 +73,4 @@ export const codes1=`
 <Link href={user.permalink}>
   <Avatar user={user} size={avatarSize} />
 </Link>`
+

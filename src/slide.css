@@ -2,14 +2,21 @@
 
 
 
+
+
+
+
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  
 }
 
 ::-webkit-scrollbar{
   width: 10px;
+  display: none;
 }
 ::-webkit-scrollbar-track{
   border: 1px solid rgba(0,0,0,0.6);
@@ -22,16 +29,18 @@
 .containers{
   height: 50vh;
   
-  width: 99%;
-  margin: 1px;
+  width: 100%;
+  margin: 0px;
   display: grid;
   place-items: center;
   background-color: rgba(0,0,0,0.8);
+  
 }
 .containers .containers1{
   height: 49vh;
   width: 99%;
   background-color: rgba(0,0,0,0.6);
+  border-radius: 3px;
 }
 .about {
   display: grid;
@@ -177,6 +186,7 @@ input{
   height:50vh;
   width:1000vh;
   
+  
 }
 .slideinner:first-child {
   background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Facebook-Cover-Page-Wallpaper.jpg");
@@ -187,11 +197,11 @@ input{
 }
 .slideinner:nth-child(3) {
   
-  background-image: url("https://img2.cgtrader.com/items/1026261/696391c77b/youtube-logo-3d-model-low-poly-max-obj-mtl-3ds-fbx-c4d-ma-mb.jpg");
+  background-image: url("https://th.bing.com/th/id/OIP.xsSHLKQBXn7ns7taO7B36gHaE-?pid=ImgDet&rs=1");
 }
 .slide .slideinner {
   background-repeat: no-repeat;
-
+;
   background-size: 100% 100%;
   height: 80px;
   width: 50px;
@@ -309,7 +319,10 @@ input{
   border-radius: 10px;
   color: rgb(238, 177, 45);
   border: 1px solid rgb(238, 177, 45); 
+  overflow: hidden;
+  
 }
+
 .signs .facebook{
   height: 40px;
   width: 70%;
@@ -344,6 +357,7 @@ input{
         margin-top: 1px;
   }
  
+  
 
  
 }
@@ -351,6 +365,7 @@ input{
   .signcontent .containersign{
       height: 60vh;
   }
+
   
 }
 
@@ -375,6 +390,8 @@ input{
     .content .root{
       width: 80%;
     }
+   
+   
    
 
 }
@@ -439,13 +456,7 @@ input{
   
   
 }
-.vidoe{
-  height: 70%;
-  width: 100%;
-  margin: 9px;
-  
-  
-}
+
 .vidoe1{
   height: 100%;
   width: 100%;
@@ -470,25 +481,35 @@ input{
 }
 .content .headercontent{
   text-align: center;
-  background-color: rgba(0,0,0,0.8);
-  color: #1F1C18;
+  background: #0a0403;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1F1C18, #130604); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #663d08;
   height: 7vh;
   width: 100%;
   font-weight: 200;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 1px solid rgb(240, 105, 27); 
   
   font-family:sans-serif;
 }
-
+.content1{
+  display: flex;
+  justify-content:space-between;
+}
 .videocontent{
  
   display: flex;
   
+  
+  
 }
 .youtubev{
-  display: flex;
-  height: 35.3vh;
+  
+  
   width:33%;
-  flex-direction: column;
+  
   margin: 1px;
   
   
@@ -503,10 +524,10 @@ input{
 }
 
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
   .youtubev{
     width: 100%;
-    height: 34.1vh;
+    
   }
   .videocontent{
     display: flex;
@@ -514,13 +535,28 @@ input{
     
   }
   
+  .showbutton .showcontentbutton{
+    
+    font-size: 5px;
+    
+  }
+
+
+  .detailheader .backgrounds .imgs{
+    
+    width: 70%;
+    height: 80%;
+  }
+  
 }
 
-.youtubev .description{
-  color: rgb(150, 73, 22);
-  
-  background-color: rgba(0,0,0,0.8);
 
+.youtubev .description{
+  color: wheat;
+  background-image: linear-gradient(135deg, rgb(37, 15, 15), lightgreen, rgb(161, 105, 1));
+  padding: 2px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 
 .code{
@@ -533,7 +569,7 @@ font-weight: 200;
 }
 .code p{
 font-family:serif;
-font-size: 20px;
+font-size: 15px;
 }
 .code ul{
   text-decoration-color:blue;
@@ -554,3 +590,410 @@ font-size: 20px;
   flex-direction: column;
 
 }
+.textcolor{
+  color:blue;
+}
+.reactjs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./logo192.png");
+  background-color: #8E0E00;
+  background-repeat: no-repeat;
+  background-size: 100%  100%;
+  height: 70vh;
+  width: 50%;
+  margin-left: 25%;
+  background-color: aqua;
+  
+}
+.reactjs .reactjsimg{
+ 
+  border-radius: 50%;
+  height: 70%;
+  width: 20%;
+  
+  
+}
+@keyframes rot {
+  0%{
+    transform: rotate(10deg); 
+  }
+  100%{
+    transform: rotate(360deg); 
+  }
+}
+.showbutton{
+  height: 10%;
+  width: 100%;
+  background:black;  /* fallback for old browsers */
+  
+  display: flex;
+  color: rgb(231, 139, 18);
+  margin: 1px;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid rgb(238, 177, 45); 
+  
+}
+.showbutton .showcontentbutton{
+  height: 40px;
+  width: 20%;
+  border-radius: 15px;
+  color: wheat;
+  
+
+}
+.contentfooter{
+  background-image: linear-gradient(135deg, white, lightgreen, rgb(160, 78, 12));
+  
+
+  height: 200px;
+  width: 100%;
+  display: flex;
+  
+  align-content: flex-end;
+  justify-self:flex-end;
+  clip-path: polygon(46% 63%, 70% 49%, 84% 38%, 100% 5%, 100% 100%, 9% 100%, 0 100%, 0 100%, 7% 88%, 26% 73%);
+}
+.contentfooter .text-centers{
+  top: 400px;
+  left: 50px;
+  margin-top: 50px;
+}
+.detailheader{
+  height: 50vh;
+  width: 100%;
+}
+.detailheader .backgrounds{
+  height:100%;
+  width: 100%;
+ background-image: url("./prashants.jpg");
+ background-repeat: no-repeat;
+  background-size: 100% 100%;
+position: relative;
+  display: flex;
+  justify-content: center;
+  
+  
+  background: #0a0403;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(27, 118, 170),#130604);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,rgb(27, 118, 170),#130604);
+
+}
+.detailheader .imgs{
+  height: 100%;
+  width: 20%;
+  
+  border-radius: 50%;
+  position: absolute;
+  background-image: url('./prashant.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 1px solid   rgb(150, 73, 22);
+}
+.aboutbox1{
+  
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.aboutbox1 .aboutbox2{
+  
+  width: 100%;
+   border: 1px solid rgb(134, 74, 6);
+  background: rgba(0,0,0,1);
+}
+.aboutbox2 .name{
+  display: flex;
+  padding: 4px;
+  flex-wrap: wrap;
+  
+  justify-content:space-between;
+}
+.aboutbox2 .name h3{
+  color: #663d08;
+  text-transform:uppercase;
+  font-size: 15px;
+}
+.aboutbox2 .name h4{
+  text-transform:uppercase;
+  font-size: 13px;
+}
+.aboutbox2 .name h5{
+  
+  font-size: 13px;
+}
+.linux{
+  padding:10px;
+}
+.linux h3{
+  font-family: Didot, serif;
+}
+.linux p{
+  font-family:cursive;
+padding-left: 5PX;
+}
+.imgslinux{
+  height: 70vh;
+  width: 100%;
+}
+.linux .imgslinux .imgs1{
+  background-image: url("https://www.technocrazed.com/wp-content/uploads/2015/12/Linux-Wallpaper-44.jpg");
+  height: 100%;
+  width: 100%;
+  background-color: #663d08;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.whatsup {
+  position:fixed;
+  margin-top: 10px;
+  left:10px;
+  animation: wave 1s ease-out infinite;
+  
+
+ 
+}
+
+@keyframes wave{
+  0%{
+    transform: translateY(15px);
+
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(2px);
+  }
+
+
+
+}
+
+
+
+
+
+
+main{
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 12.7%;
+  
+  transform: translate(-50%,2%);
+  overflow: hidden;
+  border-radius: 10px;
+  border:1px solid rgb(27, 118, 170,0.3) ;
+  box-shadow: 0 1.2rem 3rem 0rem rgb(0, 0, 0, 0.2);
+}
+
+header{
+  
+  background: #0a0403;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(27, 118, 170),#130604);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#130604,rgb(27, 118, 170));
+  color: aqua;
+  padding: 7px 20px;
+  display:flex;
+  align-items:center;  
+  justify-content: space-between;
+  height: 20%;
+  width: 100%;
+
+  }
+
+  .title{
+      display: flex;
+      
+  }
+ .users-head{
+  
+  
+  height:10%
+  
+
+  
+}
+.container{
+  width: 100%;
+  
+  
+
+}
+
+.user-window{
+  background: #0a0403;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(27, 118, 170),#130604);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,rgb(27, 118, 170),#747070,#130604); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  width: 100%;
+  position: relative;
+
+}
+
+.chat-window{
+  
+  
+  width: 100%;
+  
+}
+.chats{
+  height: 40vh;
+  background-image: url("./image.jpg");
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  
+}
+.user-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  width: 100%;
+  background-color: black;
+  
+  
+}
+.user-input textarea{
+  width: 80%;
+  height: 100%;
+  padding: 1px;
+  
+  outline: none;
+  border: none;
+  background:linear-gradient(to right,rgb(247, 211, 194),rgb(27, 118, 170));
+}
+.user-input button{
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(to right,rgb(27, 118, 170),#cc321a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  outline: none;
+  border: none;
+}
+.messages{
+  
+  word-wrap: break-word;
+  border-radius: 7px;
+  font-family: sans-serif;
+  font-size: 15px;
+  
+  width: 65%;
+  margin:4px;
+  color: azure;
+  
+  
+}
+.messages > h6{
+  font-size: 15px;
+  
+  border-bottom:0.5px solid chocolate; 
+  
+}
+.outgoing{
+  
+margin-left: 35%;
+margin-top: 9px;
+margin-bottom: 9px;
+padding: 2px;
+display:flex;
+justify-content:flex-end;
+flex-direction: column;
+background: linear-gradient(to right,#202020,#181717,#0f0e0e);
+
+
+}
+
+.incoming{
+  background: linear-gradient(to right,#202020,#747070,#0f0e0e);
+  margin-top: 9px;
+  margin-bottom: 9px;
+  padding: 2px;
+}
+.users-join{
+  display: flex;
+  margin: 4px;
+  justify-content: center;
+  
+}
+.users-join p{
+  background: linear-gradient(to right,#202020,#181717,#0f0e0e);
+  border-radius:10px;
+  padding: 1px;
+  font-size: 15px;
+  border-bottom:1px solid chocolate;
+
+
+}
+.users-list{
+  
+  word-wrap: break-word;
+  margin-left: 3px;
+}
+.users-list p{
+  margin: 4px;
+  display: inline-table;
+  border-radius: 4px;
+  border-bottom:1px solid rgb(224, 214, 207);
+}
+.scrollpart{
+  box-sizing: border-box;
+  height:100%
+}
+@media screen and (max-width:1030px){
+  main{
+      width:95%;
+      position: absolute;
+      
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,2%);
+  }
+}
+
+.cookies{
+  background: #0a0403;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1F1C18, #130604); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  bottom:10px;
+  color: #663d08;
+  width: 100%;
+  display: flex;
+  word-wrap: break-word;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 8px;
+  
+  
+}
+
+.cookies button{
+  background: linear-gradient(to right, #1F1C18, #130604); 
+  width: 20%;
+  
+  border-radius: 10px;
+  color: rgb(238, 177, 45);
+  border: 1px solid rgb(238, 177, 45);
+}
+
+
+@media screen and (max-width:425px) {
+  .cookies button{
+    width: 40%;
+  }
+  
+}
+

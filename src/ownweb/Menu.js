@@ -8,11 +8,11 @@ const Menu =()=>{
                     <ul>
                       <li><NavLink   className="Navcolor" to='/'>HOME</NavLink></li>
                       <li><NavLink   className="Navcolor" to="/Content" >CONTENT</NavLink></li>
-                      <li><NavLink    className="Navcolor" to ='/detail'>DETAIL</NavLink></li>
+                      <li><NavLink    className="Navcolor" to ='/Detail'>DETAIL</NavLink></li>
                     </ul>
                   </div>
                   <div className="sign">
-                    <h6><NavLink    className="Navcolor" to ='/sign'>SIGN</NavLink></h6>
+                    <h6><NavLink    className="Navcolor" to ='/sign'>SIGN UP</NavLink></h6>
                   </div>
                 </div>
         </>
