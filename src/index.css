@@ -1,0 +1,370 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /*color:rgb(16, 158, 177)*/
+  
+}
+.navbar-brand{
+  height:70px ;
+  overflow: hidden;
+  background-image: url("hacker.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 70px;
+}
+.navbar{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.container1{
+  height: 98vh;
+  border:2px solid red;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  justify-content:space-between;
+}
+.row1{
+  
+  box-shadow: 10px 10px 6px -6px black;
+  border:2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+.row2{
+  
+  box-shadow: 10px 10px 6px -6px black;
+  border:2px solid rgb(0, 255, 242);
+  width: 100%;
+}
+.dis1{
+  box-shadow: 10px 10px 6px -6px rgb(96, 221, 204);
+}
+.dis2{
+  box-shadow:
+  0 2.8px 2.2px white,
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px white,
+  0 100px 80px white
+;
+}
+.inputeffect{
+  border:0;
+  border-bottom:1px solid #ccc;
+  padding:7px 0;
+}
+.inputeffect:hover{
+  border-top: 1px solid #ccc;
+}
+.inputeffect:focus{
+  border-bottom:1px solid rgb(168, 30, 30);
+  border-radius: 5px
+}
+.borderc{
+  
+  height:65vh;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-content: center;
+}
+.textwelcome{
+ /* text-shadow: 0 1px 0 rgba(160, 145, 14, 0.4);*/
+  text-shadow:
+    0 1px #808d93,
+    -1px 0 #cdd2d5,
+    -1px 2px #808d93,
+    -2px 1px #cdd2d5,
+    -2px 3px #808d93,
+    -3px 2px #cdd2d5,
+    -3px 4px #808d93,
+    -4px 3px #cdd2d5,
+    -4px 5px #808d93,
+    -5px 4px #cdd2d5,
+    -5px 6px #808d93,
+    -6px 5px #cdd2d5,
+    -6px 7px #808d93,
+    -7px 6px #cdd2d5,
+    -7px 8px #808d93,
+    -8px 7px #cdd2d5;
+
+}
+.errorborderc{
+
+
+  display: grid;
+  place-items: center;
+  height:98vh;
+  width: 100%;
+}
+.errorh1{
+
+  display: grid;
+  place-items: center;
+  text-shadow:
+  0 1px #808d93,
+  -1px 0 #cdd2d5,
+  -1px 2px #808d93,
+  -2px 1px #cdd2d5,
+  -2px 3px #808d93,
+  -3px 2px #cdd2d5,
+  -3px 4px #808d93,
+  -4px 3px #cdd2d5,
+  -4px 5px #808d93,
+  -5px 4px #cdd2d5,
+  -5px 6px #808d93,
+  -6px 5px #cdd2d5,
+  -6px 7px #808d93,
+  -7px 6px #cdd2d5,
+  -7px 8px #808d93,
+  -8px 7px #cdd2d5;
+  font-size: 200px;
+  box-shadow:
+  0 2.8px 2.2px white,
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px white,
+  0 100px 80px white
+;
+  
+}
+.buttons{
+  height:100%;
+  width: 100%;
+}
+.bordercolor{
+  border:2px solid red;
+}
+.registercontainer{
+  font-size: 20px;
+  background-image: url('key.jpg');
+  backdrop-filter: blur(2px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 0px;
+display: flex;
+justify-content: left;
+margin-left: 0%;
+  height: 89vh;
+  width: 100%;
+}
+/*registerinput*/
+.loginoutfont{
+  font-size: large;
+  height: 93vh;
+  width: 100%;
+}
+.homecontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid red ;
+  height: 89vh;
+  width: 100%;
+}
+.homecontainer{
+  index:1;
+  background-image: linear-gradient(to bottom, #0d0d0c, #2d382b, #3b695a, #369da0, #3ed1f8);
+ height: 89vh;
+ 
+ clip-path: circle(180vh at 50% -100vh);
+  width: 100%;
+
+
+}
+.homecontainer h1{
+  mix-blend-mode: screen;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.serviceregister{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  margin-bottom: 20px;
+  box-shadow:
+  0 2.8px 2.2px white,
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px white,
+  0 100px 80px white
+;
+}
+.serviceregister  .servicetext{
+  border:0;
+  border-bottom:1px solid #ccc;
+
+}
+.servicegettouch {
+  height: 70vh;
+
+  padding-top: 100px;
+
+}
+
+.contact_form_tittle{
+  margin: 10px 10px;
+}
+
+.contact_form_tittle .c
+.servicegettouch form {
+  margin: 20px 20px ;
+  height:50vh;
+}
+.servicethreeinputbox{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.servicegettouch .contactfrom {
+  margin-top: 50px;
+  height: 100px;
+  width: 100%;
+  box-shadow:
+  0 2.8px 2.2px white,
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px white,
+  0 100px 80px white
+;
+
+}
+.servicegettouch #form .serviceinput{
+  border:0;
+  height: 40px;
+  border-bottom:1px solid #ccc;
+  width: 200px;
+}
+
+
+
+
+
+@media(max-width:500px){
+   .dis1{
+     display: flex;
+     flex-wrap: wrap;
+  
+   }
+  .dis2{
+    height:20vh;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .dis2 input {
+    width: 195px;
+  }
+
+
+}
+
+
+
+
+
+.bodyfront {
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+ /* background: #1D1F20;*/
+}
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 400px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+
+  border-radius: var(--borderWidth);
+  
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.about{
+  
+  height:200;
+  width:100%;
+  margin-top:10px;
+  background-color: #b1ebd9;
+  border-radius:5px;
+  font-family: Didot, serif;
+  
+}
+
+
+.about .about1{
+  
+  text-align: center;
+}
+.about .about2{
+  
+  text-align: center;
+  
+}
+.footer{
+  height: 30;
+  display:grid;
+  border-radius: 5;
+  background-color: rgb(36, 34, 34);
+  justify-content: center;
+  align-content:center;
+  
+}
+.footer h6{
+  color:white;
+}
+
+.nav-item{
+  font-family: Didot, serif;
+  font-size: 20px;
+  text-decoration: none;
+}
