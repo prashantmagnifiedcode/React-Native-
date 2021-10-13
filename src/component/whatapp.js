@@ -27,7 +27,7 @@ const dispatchnew= useDispatch()
     
     
     useEffect(() => {
-          const ENDPOINT = "http://localhost:8000"
+          const ENDPOINT = "https://git.heroku.com/serverchatconnection.git"
       
      socket = socketIo(ENDPOINT, { transports: ["websocket"] });
     socket.on("connect", () => {
